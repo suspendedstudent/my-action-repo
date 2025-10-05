@@ -1,0 +1,19 @@
+name: My Verification Action
+
+# This tells the action to run on pushes to the main branch
+on:
+  push:
+    branches: [ main ]
+  # This allows you to run it manually from the Actions tab
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      # This is the step with your email address in the name
+      - name: Step for 22f2000998@ds.study.iitm.ac.in
+        run: echo "This step successfully ran!"
+
+      - name: Completion step
+        run: echo "Action finished."
